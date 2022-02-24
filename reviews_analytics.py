@@ -8,9 +8,14 @@ with open('reviews.txt', 'r') as f:
         if count % 1000 == 0:
             print(len(data))
 
-print(len(data))
+print('there are', len(data), 'datas')
 
-print(data[0])
-print('-'*60)
-print(data[1])
+print(len(data[0]))
+
+sum_len = 0
+for length in data:
+    sum_len += len(length)
+    
+print('Total analytics are', sum_len)
+print('average analytics are', sum_len / len(data))
 
