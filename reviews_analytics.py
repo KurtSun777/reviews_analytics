@@ -26,3 +26,13 @@ for length in data:
         new.append(length)
 print('there are', len(new), 'datas which len < 100')
 print(new[0])
+
+
+good = []
+for d in data:
+    if 'good' in d:
+        good.append(d)
+
+print('there are', len(good), 'data which is with good')
+print('\n')
+print(good[0])
