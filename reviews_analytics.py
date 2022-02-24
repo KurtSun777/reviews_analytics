@@ -19,3 +19,10 @@ for length in data:
 print('Total analytics are', sum_len)
 print('average analytics are', sum_len / len(data))
 
+new = []
+
+for length in data:
+    if len(length) < 100:
+        new.append(length)
+print('there are', len(new), 'datas which len < 100')
+print(new[0])
