@@ -36,3 +36,6 @@ for d in data:
 print('there are', len(good), 'data which is with good')
 print('\n')
 print(good[0])
+
+good1 = [1 for d in data if 'good in d']
+print(good1)
