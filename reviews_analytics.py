@@ -39,3 +39,11 @@ print(good[0])
 
 good1 = [d for d in data if 'good in d']
 print(good1[0])
+
+bad1 = []
+for d in data:
+    bad1.append('bad' in d)
+print(bad1)
+
+bad = ['bad' in d for d in data]
+print(bad)
